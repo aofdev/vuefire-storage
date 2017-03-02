@@ -1,8 +1,10 @@
 # vuefire-storage demo
 
 ## Config
-> firebase auth enable
-![alt tag]()
+ > firebase storage rules  
+ ``` bash
+   allow read, write: if request.auth != null; change to allow read, write: if true;
+ ```
 
 At -> src/components/Hello.vue     [firebase console](https://console.firebase.google.com/)
 ``` bash
