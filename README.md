@@ -1,4 +1,4 @@
-# vuefire-storage demo
+# vuefire-storage
 
 ## Config
  > firebase storage rules  
