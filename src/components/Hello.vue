@@ -1,13 +1,8 @@
 <template>
-<div class="hello">
-
+<div>
   <progress value="0" max="100" id="uploader"></progress>
   <input accept="image/*" type="file" value="upload" @change="fileBtn(file, $event)">
 </div>
- 
- 
- 
-
 </template>
 
 <script>
@@ -19,12 +14,6 @@
 
 
 export default {
-  name: 'hello',
-  data () {
-    return {
-     
-    }
-  },
   methods:{
     fileBtn:function(file, e){
         e.preventDefault();
@@ -41,10 +30,10 @@ export default {
         uploader.value = percentage;
       },
       function error(err){
-
+        console.log(err);
       },
       function complete(){
-
+         console.log('complete upload');
       }
       );
     }
